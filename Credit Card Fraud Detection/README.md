@@ -1,10 +1,71 @@
 Final Year Project · Two-stage ML pipeline · React + Flask + Firebase + Socket.IO
 ---
 ```
+VERSION:
 python 3.13.2
 npm 11.6.2
 ```
-
+## Folder Tree Overview
+```
+fraud-app/
+├── README.md
+│
+├── backend/
+│   ├── app.py               
+│   ├── requirements.txt
+│   ├── .env
+│   ├── firebase-credentials.json
+│   └── models/
+│       ├── ulb_data.csv
+│       ├── malaysian_profiles.csv
+│       ├── malaysian_scaler.pkl
+│       ├── meta_learner.pkl
+│       ├── stage1_catboost.pkl
+│       ├── stage1_iso_forest.pkl
+│       ├── stage1_rf.pkl
+│       ├── stage1_xgb.pkl	
+│       ├── stage2_gbm.pkl	
+│       └── x_test_rows.csv
+│
+└── frontend/
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── vite.config.js
+    ├── node_modules/
+    ├── .env
+    └── src/
+        ├── main.jsx        
+        ├── App.jsx         
+        ├── index.css
+        ├── firebase.js
+        │
+        ├── context/
+        │   ├── AuthContext.jsx    
+        │   └── SocketContext.jsx   ← real-time alerts
+        │
+        ├── utils/
+        │   └── api.js              ← all fetch calls to backend
+        │
+        ├── components/
+        │   ├── Layout.jsx          ← sidebar + alert banner
+        │   └── Layout.css
+        │
+        └── pages/
+            ├── LoginPage.jsx + Auth.css
+            ├── RegisterPage.jsx
+            ├── Dashboard.jsx + Dashboard.css
+            ├── HistoryPage.jsx + HistoryPage.css
+            ├── AdminPage.jsx + AdminPage.css
+            ├── AdminHistoryPage.jsx + AdminHistoryPage.css
+            ├── Dashboard.jsx + Dashboard.css
+            ├── ManageCard.jsx + ManageCard.css
+            ├── ManageModel.jsx + ManageModel.css
+            ├── ManageUserPage.jsx + ManageUserPage.css
+            ├── Notifications.jsx + Notifications.css
+            ├── SettingsPage.jsx + SettingsPage.css
+            └── TicketsPage.jsx + TicketsPage.css
+```
 ## ML Pipeline
 
 ```
@@ -41,7 +102,7 @@ Input: V1–V28 (PCA) + Time + Amount + District
 
 ## Quick  (From Scratch)
 ## Have 2 terminals simultaneously opened:
-### 1. Backend
+### Terminal 1. Backend
 
 ```cmd
 cd backend
@@ -56,7 +117,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 2. Frontend
+### Terminal 2. Frontend
 
 ```cmd
 cd frontend
@@ -98,7 +159,7 @@ print("Done")
 
 ## Model Files Expected in `backend/models/`
 
-| File | Required | Description |
+| File Required | Description |
 |------|----------|-------------|
 | `stage1_xgb.pkl` | XGBClassifier (Stage 1 base) |
 | `stage2_gbm.pkl` | GradientBoostingClassifier (Stage 2) |
