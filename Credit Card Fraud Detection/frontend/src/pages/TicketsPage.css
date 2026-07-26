@@ -1,0 +1,74 @@
+.ticket-list { display: flex; flex-direction: column; gap: 12px; }
+
+.ticket-card {
+  background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #e5e7eb;
+  border-radius: 10px; padding: 16px 18px;
+}
+.ticket-card-pending  { border-left-color: #f59e0b; }
+.ticket-card-approved { border-left-color: #22c55e; }
+.ticket-card-rejected { border-left-color: #94a3b8; }
+
+.ticket-card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 6px;
+}
+.ticket-card-txn { font-size: 14px; color: #1e293b; }
+
+.ticket-card-meta {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 12px; color: #94a3b8; margin-bottom: 10px;
+}
+
+.ticket-card-reason {
+  font-size: 13px; color: #374151; font-style: italic;
+  background: #f8fafc; border-radius: 8px; padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.ticket-card-actions {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+}
+
+.ticket-view-link {
+  font-size: 12px; font-weight: 600; color: #6366f1; text-decoration: none;
+}
+.ticket-view-link:hover { text-decoration: underline; }
+
+.ticket-resolve-actions { display: flex; gap: 8px; }
+
+.ticket-approve-btn {
+  display: flex; align-items: center; gap: 5px;
+  background: #22c55e; color: #fff; border: none; border-radius: 7px;
+  padding: 7px 14px; font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.ticket-approve-btn:hover { background: #16a34a; }
+.ticket-approve-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.ticket-reject-btn {
+  display: flex; align-items: center; gap: 5px;
+  background: #fff; border: 1px solid #e5e7eb; color: #475569;
+  border-radius: 7px; padding: 7px 14px; font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.ticket-reject-btn:hover { background: #f8fafc; }
+.ticket-reject-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.ticket-resolved-note {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 600; color: #16a34a;
+}
+.ticket-resolved-note.muted { color: #94a3b8; }
+
+.clear-all-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: #fff; border: 1px solid #fecaca; color: #b91c1c;
+  font-size: 13px; font-weight: 500;
+  padding: 8px 14px; border-radius: 8px; cursor: pointer;
+}
+.clear-all-btn:hover:not(:disabled) { background: #fef2f2; }
+.clear-all-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.ticket-delete-icon-btn {
+  background: none; border: none; cursor: pointer; padding: 4px;
+  color: #cbd5e1; display: flex; align-items: center;
+}
+.ticket-delete-icon-btn:hover { color: #ef4444; }
