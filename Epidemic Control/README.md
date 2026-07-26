@@ -1,5 +1,5 @@
 # Epidemic Control via Reinforcement Learning
-
+(Download the file to view)
 A reinforcement learning framework for optimizing pandemic response policies, balancing economic output against public health outcomes using a custom SEIRD epidemic simulation environment.
 
 ## Overview
