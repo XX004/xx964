@@ -160,19 +160,20 @@ print("Done")
 ## Model Files Expected in `backend/models/`
 
 | File Required | Description |
-|------|----------|-------------|
+|---|---|
 | `stage1_xgb.pkl` | XGBClassifier (Stage 1 base) |
 | `stage2_gbm.pkl` | GradientBoostingClassifier (Stage 2) |
-| `malaysian_scaler.pkl` |  StandardScaler for Stage 2 |
-| `stage1_scaler_time.pkl` |  RobustScaler for Time column |
-| `stage1_scaler_log.pkl` |  RobustScaler for log_amount |
+| `malaysian_scaler.pkl` | StandardScaler for Stage 2 |
+| `stage1_scaler_time.pkl` | RobustScaler for Time column |
+| `stage1_scaler_log.pkl` | RobustScaler for log_amount |
 | `stage1_iso_forest.pkl` | IsolationForest for anomaly score |
-| `malaysian_profiles.csv`  | DOSM district lookup |
-| `meta_learner.pkl`  | LogisticRegression stacking meta |
-| `stage1_rf.pkl`  | Random Forest base model |
-| `stage1_catboost.pkl` |   CatBoost base model |
+| `malaysian_profiles.csv` | DOSM district lookup |
+| `meta_learner.pkl` | LogisticRegression stacking meta |
+| `stage1_rf.pkl` | Random Forest base model |
+| `stage1_catboost.pkl` | CatBoost base model |
 
 ---
+
 ## Environment Variables
 
 ### Backend `.env`
