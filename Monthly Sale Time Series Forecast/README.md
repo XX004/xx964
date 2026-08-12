@@ -36,5 +36,5 @@ The script expects a CSV file named `Sales.csv` in the root directory, containin
 ## Usage
 1. Run Data_Generation.R script  in your preferred R environment (e.g., RStudio / Posit Cloud).
 2. Place your `Sales.csv` in the working directory.
-3. Run the Full Code.R
+3. Run the FullCode.R
 
