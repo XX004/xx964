@@ -16,4 +16,3 @@ Kickstarter-style crowdfunding platform on Ethereum. A `Factory` contract deploy
 Local, offline RAG-style chatbot for chatting with your own PDF/DOCX/TXT files, running entirely on local LLMs via Ollama (LLaMA 3.1, DeepSeek-R1, Qwen3) — no external API calls. Includes voice input, text-to-speech, and multilingual translation of responses.
 **Stack:** Streamlit, LangChain, Ollama, NLTK
 
--Each folder is self-contained with its own README covering setup and architecture in more depth.
