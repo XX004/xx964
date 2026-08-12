@@ -34,6 +34,7 @@ The script expects a CSV file named `Sales.csv` in the root directory, containin
 | **Tuned Strict BATS/TBATS** | `58.68052` | `13.04437` |
 
 ## Usage
-1. Place your `Sales.csv` in the working directory.
-2. Run the script in your preferred R environment (e.g., RStudio / Posit Cloud).
+1. Run Data_Generation.R script  in your preferred R environment (e.g., RStudio / Posit Cloud).
+2. Place your `Sales.csv` in the working directory.
+3. Run the Full Code.R
 
