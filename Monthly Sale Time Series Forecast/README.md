@@ -1,6 +1,5 @@
-# Time Series Forecasting: Ultimate Master Script
+# Time Series Forecasting
 
-A comprehensive R script for time series forecasting, featuring basic model selection, diagnostics, and advanced hyperparameter tuning for Holt-Winters (ETS), ARIMA/SARIMA, and TBATS/BATS models.
 
 ## Overview
 This repository contains a master R script designed to take monthly time series data and perform end-to-end forecasting. The workflow is divided into systematic steps:
@@ -30,12 +29,11 @@ The script expects a CSV file named `Sales.csv` in the root directory, containin
 
 | Model | RMSE | MAPE |
 | :--- | :--- | :--- |
-| **Tuned Holt-Winters (ETS)** | `[PLACEHOLDER]` | `[PLACEHOLDER]` |
-| **Tuned SARIMA** | `[PLACEHOLDER]` | `[PLACEHOLDER]` |
-| **Tuned Strict BATS/TBATS** | `[PLACEHOLDER]` | `[PLACEHOLDER]` |
+| **Tuned Holt-Winters (ETS)** | `59.75131` | `13.71803` |
+| **Tuned SARIMA** | `54.93436` | `14.15825` |
+| **Tuned Strict BATS/TBATS** | `58.68052` | `13.04437` |
 
 ## Usage
-1. Clone the repository and place your `Sales.csv` in the working directory.
-2. Run the script in your preferred R environment (e.g., RStudio).
-3. Check the console for accuracy leaderboards, Ljung-Box test p-values, and AIC/BIC comparisons.
-4. Review the generated plots for visual forecast comparisons and residual diagnostics.
+1. Place your `Sales.csv` in the working directory.
+2. Run the script in your preferred R environment (e.g., RStudio / Posit Cloud).
+
