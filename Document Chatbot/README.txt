@@ -9,7 +9,8 @@
 - Voice input (Google Speech Recognition via `speech_recognition`), text-to-speech for any response (`pyttsx3` for local TTS, `gTTS` for multilingual), and one-click translation of the last response into 8 languages (Malay, Spanish, French, German, Italian, Korean, Chinese, English) via `deep-translator`.
 - Basic username/password login and registration, scoped per user so chat histories don't mix.
 
-## Instructions
+## Setup
+```
 1) Download Ollama from ollama.com
 
 2) Setup ollama from the downloaded path, run, install
@@ -44,7 +45,7 @@ In compiler,
 **ALWAYS ENSURE THAT 
 **A FOLDER "chat_histories" and a file named "users.json" 
 **IS PRESENT IN THE PROJECT FOLDER
-
+```
 ## Project structure
 
 ```
